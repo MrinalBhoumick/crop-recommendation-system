@@ -11,5 +11,7 @@ RUN pip install -r requirements.txt
 # Copy all files from the current directory to /app in the container
 COPY . .
 
+EXPOSE 5000
+
 # Command to run the application
 CMD ["python", "app.py"]
